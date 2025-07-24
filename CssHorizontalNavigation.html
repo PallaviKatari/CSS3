@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-  /*go to uigradient website and choose your gradient*/
-  body{
-    background: #c31432;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  <head>
+    <style>
+      /*go to uigradient website and choose your gradient*/
+      body {
+        background: #c31432; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #240b36,
+          #c31432
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #240b36,
+          #c31432
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: -webkit-sticky; /*safari*/
+        position: sticky;
+        top: 0;
+      }
 
+      li {
+        float: left;
+      }
 
-  }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-position: -webkit-sticky; /*safari*/
-  position:sticky;
-top:0;
-}
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-li {
-  float: left;
-}
+      li a:hover:not(.active) {
+        background-color: rgb(202, 160, 160);
+      }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+      .active {
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Scroll Down</h2>
+      <p>Scroll down to see the sticky effect.</p>
+    </div>
 
-li a:hover:not(.active) {
-  background-color: rgb(202, 160, 160);
-}
+    <ul>
+      <li><a class="active" href="workplace.jpg">HOME</a></li>
+      <li><a href="img1.jpg">HTML</a></li>
+      <li><a href="img2.jpg">CSS</a></li>
+      <li><a href="contact.jpg">CONTACT</a></li>
+    </ul>
+    <h1>CSS</h1>
 
-.active {
-  background-color:turquoise;
-}
-</style>
-</head>
-<body>
-<div>
-  <h2>Scroll Down</h2>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
-
-<ul>
-  <li><a class="active" href="workplace.jpg">HOME</a></li>
-  <li><a href="img1.jpg">HTML</a></li>
-  <li><a href="img2.jpg">CSS</a></li>
-  <li><a href="contact.jpg">CONTACT</a></li>
-</ul>
-<h1>CSS</H1>
-
-<pre>Stands for "Cascading Style Sheet."
+    <pre>
+Stands for "Cascading Style Sheet."
  
 Cascading style sheets are used to format the layout of Web pages. 
 
@@ -80,11 +87,12 @@ For example, CSS can be used to define the cell padding of table cells, the styl
  
 CSS gives Web developers more exact control over how Web pages will look than HTML does. 
 
-This is why most Web pages today incorporate cascading style sheets.</pre>
+This is why most Web pages today incorporate cascading style sheets.</pre
+    >
 
-<h1>HTML</h1>
+    <h1>HTML</h1>
 
-<pre>
+    <pre>
 
 Hypertext Markup Language (HTML) is a computer language that makes up most web pages and online applications. 
 
@@ -106,6 +114,7 @@ It�s also worth noting that HTML is now considered an official web standard.
 
 The World Wide Web Consortium (W3C) maintains and develops HTML specifications, along with providing regular updates.
 
-</pre>
-</body>
+</pre
+    >
+  </body>
 </html>

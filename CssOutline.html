@@ -1,25 +1,47 @@
+<!-- COMPLETED -->
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-p.dotted {border-style: dotted;color:red;outline-style: solid;outline-color:blue;outline-width:20pt}
-p.dashed {border-style: dashed;color:blue;outline-style: double;outline-color:red;outline-offset: 15px;}
+  <head>
+    <style>
+      p.dotted {
+        border-style: dotted dashed;
+        border-color: black red;
+        border-width: 5px 2px;
+        border-radius: 3px;
+        color: red;
+        outline-style: dashed;
+        outline-color: blue;
+        outline-width: 5px;
+      }
+      p.dashed {
+        border-style: dashed;
+        color: blue;
+        outline-style: double;
+        outline-color: red;
+        outline-offset: 15px;
+      }
 
+      .spanoutline {
+        border-style: dotted dashed;
+        border-color: black red;
+        border-width: 5px 2px;
+        border-radius: 3px;
+        color: red;
+        outline-style: dashed;
+        outline-color: blue;
+        outline-width: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The outline-style Property</h2>
+    <br />
+    <p>This property specifies what kind of outline and border to display:</p>
+    <br />
 
-</style>
-</head>
-<body>
-
-<h2>The outline-style Property</h2>
-<br>
-<p>This property specifies what kind of outline and border to display:</p>
-<br>
-
-<p class="dotted">A dotted border and solid outline</p>
-<br>
-<p class="dashed">A dashed border and double outline</p>
-
-
-
-</body>
+    <p class="dotted">A dotted border and solid outline</p>
+    <br />
+    <p class="dashed">A dashed border and double outline</p>
+    <span class="spanoutline">This is a span element with an outline.</span>
+  </body>
 </html>

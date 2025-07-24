@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    .d {
-  background-color:gray; 
-  text-align: center;
-  
-}
-    .d li{
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
-}
-span.a {
-  display: inline; /* the default for span */
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;  
-  background-color: yellow; 
-}
+  <head>
+    <style>
+      .d {
+        background-color: gray;
+        text-align: right;
+        background-image: url("img1.jpg");
+      }
+      .d li {
+        display: inline-block;
+        font-size: 10px;
+        padding: 10px;
+       
+      }
 
-span.b {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;    
-  background-color: yellow; 
-}
+      span.a {
+        display: inline; /* the default for span */
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
 
-span.c {
-  display: block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;    
-  background-color: yellow; 
-}
-  </style>
+      span.b {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: rgb(142, 134, 232);
+      }
 
-</head>
-<body>
+      span.c {
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background-color: darkturquoise; display: inline">G2TECH</h1>
 
-<h1 style="background-color: darkturquoise;display: inline;">G2TECH</h1>
+    <h1 style="background-color: darkturquoise; display: block">G2TECH</h1>
+    <nav>
+      <ul class="d">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
 
-<h1 style="background-color: darkturquoise;display:block">G2TECH</h1>
 
-<ul class="d">
-  <li><a href="">Home</a></li>
-  <li><a href="">About Us</a></li>
-</ul>
+    <p>BLOCK LIST</p>
+    <ul style="background-color: darksalmon; display: block">
+      <li>one</li>
+      <li>two</li>
+    </ul>
 
-<p>BLOCK LIST</p>
-<ul style="background-color: darksalmon;display: block;">
-<li>one</li>
-<li>two</li>
-</ul>
+    <h3>DISPLAY:BLOCK AND INLINE</h3>
 
-<h3>DISPLAY:BLOCK AND INLINE</H3>
-
-<pre>
+    <pre>
 The display property is the most important CSS property for controlling layout.
 
 The display property specifies if/how an element is displayed.
@@ -81,14 +85,14 @@ form
 header
 footer
 section
-</div>
+</div> 
 
-<b>Inline Elements</b>
+ <b>Inline Elements</b>
 An inline element does not start on a new line and only takes up as much width as necessary.
 
-<span style="background-color: greenyellow;margin-top: 50px;"> Hello</span>
+<span style="background-color: greenyellow;margin-top: 50px;"> Hello</span> 
 
-<span style="background-color: greenyellow;display:inline-block;margin-bottom: 50px;margin-top: 50px;">Hello</span>
+<span style="background-color: greenyellow;display:inline-block;margin-bottom: 50px;margin-top: 50px;margin-left: 50px;">Hello</span>
 
 Examples of inline elements:
 
@@ -97,24 +101,30 @@ a
 img
 </pre>
 
-<p>DISPLAY PROPERTY</p>
+    <p>DISPLAY PROPERTY</p>
 
-<span style="display: block;">A display property with a value of "block" results in</span> <span>a line break between the two elements.</span><hr>
+    <span style="display: inline;background-color: lightblue;"
+      >A display property with a value of "block" results in</span
+    >
+    <span>a line break between the two elements.</span>
+    <hr />
 
-<span>A display property without a value of "block" results in</span> <span>a single line</span> <hr>
+    <span>A display property without a value of "block" results in</span>
+    <span>a single line</span>
+    <hr />
 
-
-
-<div>
-  The span tag is an inline container <span class="a">INLINE</span>used to mark up a part of a text, or a part of a document.
-</div>
-<div>
-  The span tag is an inline container <span class="b">INLINE BLOCK</span>used to mark up a part of a text, or a part of a document.
-</div>
-<div>
-  The span tag is an inline container <span class="c">BLOCK</span>used to mark up a part of a text, or a part of a document.
-</div>
-
-
-</body>
+    <div>
+      The span tag is an inline container <span class="a">INLINE</span>used to
+      mark up a part of a text, or a part of a document.
+    </div>
+    <div>
+      The span tag is an inline container
+      <span class="b">INLINE BLOCK</span>used to mark up a part of a text, or a
+      part of a document.
+    </div>
+    <div>
+      The span tag is an inline container <span class="c">BLOCK</span>used to
+      mark up a part of a text, or a part of a document.
+    </div>
+  </body>
 </html>

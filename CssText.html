@@ -1,39 +1,49 @@
+<!-- COMPLETED -->
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-div {
-  border: 5px solid pink;
-  padding: 8px;/*the space between its content and its border*/
-}
+  <head>
+    <style>
+      div {
+        border: 7px solid rgba(18, 17, 17, 0.4);
+        padding: 40px; /*the space between its content and its border*/
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow:2px 5px red;/* shadow blur effect 5x color*/
-  
-}
+      h1 {
+        color: purple;
+        text-align: center;
+        text-transform: capitalize;
+        text-shadow: 5px 2px rgb(23, 234, 231); /* shadow blur effect 5x color*/
+      }
 
-p {
-  text-indent: 10px;
-  text-align: justify;
-  letter-spacing: 3px;
-}
+      p {
+        text-indent: 15px;
+        text-align: justify;
+        letter-spacing: 2px;
+      }
 
-a {
-  text-decoration: none;/* overline line-through underline*/
-  color: blue;
-}
-</style>
-</head>
-<body>
-
-<div>
-  <h1>text formatting</h1>
-  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
-  The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
-  <a target="_blank" href="CssColors.html">"Try it Yourself"</a> link.</p>
-</div>
-
-</body>
+      a.anchor {
+        text-decoration: none; /* overline line-through underline*/
+        color: rgb(207, 25, 155);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>text formatting</h1>
+      <p>
+        This text is styled with some of the text formatting properties. The
+        heading uses the text-align, text-transform, and color properties. The
+        paragraph is indented, aligned, and the space between characters is
+        specified. The underline is removed from this colored
+        <a target="_blank" href="CssColors.html" class="anchor"
+          >"Try it Yourself"</a
+        >
+        link.
+      </p>
+      <a href="CssColors.html">Hyperlink with underline</a>
+    </div>
+  </body>
 </html>

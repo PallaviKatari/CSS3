@@ -1,72 +1,97 @@
+<!-- COMPLETED -->
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#grad {
-  height: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(red, yellow);
-}
-#grad1 {
-  height: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, red , yellow);
-}
+  <head>
+    <style>
+      #grad {
+        height: 700px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(
+          circle,
+          rgba(62, 47, 227, 0.5),
+          green,
+          purple
+        );
+      }
+      #grad1 {
+        height: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, red, yellow);
+      }
 
-#grad3 {
-  height: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(red, yellow, green);
-}
+      #grad3 {
+        height: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(red, yellow, green);
+      }
 
-#grad4 {
-  height: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
-}
-#grad5 {
-  height: 200px;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-}
-#grad6 {
-  height: 150px;
-  width: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: radial-gradient(red, yellow, green);
-}
-#grad7 {
-  height: 150px;
-  width: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: radial-gradient(red, yellow, green);
-}
+      #grad4 {
+        height: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+      #grad5 {
+        height: 200px;
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 0, 0, 0),
+          rgba(255, 0, 0, 1)
+        );
+      }
+      #grad6 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(red, yellow, green);
+      }
+      #grad7 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(red, yellow, green);
+      }
 
-#grad8 {
-  height: 150px;
-  width: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: radial-gradient(circle, red, yellow, green);
-}
-#grad9 {
-  height: 150px;
-  width: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
-}
-#grad10 {
-  height: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
-}
-</style>
-</head>
-<body>
+      #grad8 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(circle, red, yellow, green);
+      }
+      #grad9 {
+        height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+      }
+      #grad10 {
+        height: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: repeating-linear-gradient(
+          190deg,
+          red,
+          yellow 7%,
+          green 10%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <p>
+      This linear gradient starts red at the top, transitioning to yellow at the
+      bottom:
+    </p>
+    <div id="grad"></div>
 
-<h1>Linear Gradient - Top to Bottom</h1>
-<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
-<div id="grad"></div>
-
-<h1>Linear Gradient - Left to Right</h1>
+    <!-- <h1>Linear Gradient - Left to Right</h1>
 <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
 
 <div id="grad1"></div>
@@ -103,11 +128,6 @@
 
 <p>A repeating gradient on 190deg axe starting red and finishing green:</p>
 <div id="grad10"></div>
-
-
-
-
-
-
-</body>
+ -->
+  </body>
 </html>

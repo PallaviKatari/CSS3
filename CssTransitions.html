@@ -1,48 +1,59 @@
+<!-- COMPLETED -->
 <!DOCTYPE html>
 <html>
-<head>
-<style> 
+  <head>
+    <style>
 
-div:hover {
-  width: 300px;
-}
+      div {
+        width: 100px;
+        height: 100px;
+        background-image: linear-gradient(red, yellow, green);
+        transition: width 2s;
+      }
 
-div{
-  width: 100px;
-  height: 100px;
-  background-image: linear-gradient(red, yellow, green);
-  transition: width 2s;
-}
+      #div1 {
+        transition-timing-function: linear;
+      }
+      #div2 {
+        transition-timing-function: ease;
+      }
+      #div3 {
+        transition-timing-function: ease-in;
+      }
+      #div4 {
+        transition-timing-function: ease-out;
+      }
+      #div5 {
+        transition-timing-function: ease-in-out;
+      }
 
-#div1 {transition-timing-function: linear;}
-#div2 {transition-timing-function: ease;}
-#div3 {transition-timing-function: ease-in;}
-#div4 {transition-timing-function: ease-out;}
-#div5 {transition-timing-function: ease-in-out;}
+      div:hover {
+        width: 300px;
+        height: 200px;
+        background-image: linear-gradient(rgb(14, 173, 231), rgb(235, 59, 205), rgb(236, 90, 112));
+      }
 
-div:hover {
-  width: 300px;
-}
+      img {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s, height 3s, transform 5s;
+      }
 
-img {
-  width: 100px;
-  height: 100px;
-  background: red;
-  transition: width 1s, height 1s, transform 1s;
-}
+      img:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+        border-radius: 20px;
+        border-style: double;
+        border-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The transition Property</h1>
 
-img:hover {
-  width: 300px;
-  height: 300px;
-  transform: rotate(360deg);
-}
-</style>
-</head>
-<body>
-
-<h1>The transition Property</h1>
-
-<pre>
+    <pre>
 CSS Transitions
 CSS transitions allows you to change property values smoothly, over a given duration.
 
@@ -53,16 +64,20 @@ transition-delay
 transition-duration
 transition-property
 transition-timing-function
-</pre>
+</pre
+    >
 
-<p>Hover over the div element below, to see the transition effect:</p>
-<div></div>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div></div>
 
-<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <p>
+      <b>Note:</b> This example does not work in Internet Explorer 9 and earlier
+      versions.
+    </p>
 
-<hr>
+    <hr />
 
-<pre>
+    <pre>
 
 Specify the Speed Curve of the Transition
 The transition-timing-function property specifies the speed curve of the transition effect.
@@ -76,28 +91,38 @@ ease-out - specifies a transition effect with a slow end
 ease-in-out - specifies a transition effect with a slow start and end
 cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function(x1,y1,x2,y2)
 
-</pre>
+</pre
+    >
 
-<h1>The transition-timing-function Property</h1>
+    <h1>The transition-timing-function Property</h1>
 
-<p>Hover over the div elements below, to see the different speed curves:</p>
+    <p>Hover over the div elements below, to see the different speed curves:</p>
 
-<div id="div1">linear</div><br>
-<div id="div2">ease</div><br>
-<div id="div3">ease-in</div><br>
-<div id="div4">ease-out</div><br>
-<div id="div5">ease-in-out</div><br>
+    <div id="div1">linear</div>
+    <br />
+    <div id="div2">ease</div>
+    <br />
+    <div id="div3">ease-in</div>
+    <br />
+    <div id="div4">ease-out</div>
+    <br />
+    <div id="div5">ease-in-out</div>
+    <br />
 
-<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
-<hr>
-<h1>Transition + Transform</h1>
+    <p>
+      <b>Note:</b> This example does not work in Internet Explorer 9 and earlier
+      versions.
+    </p>
+    <hr />
+    <h1>Transition + Transform</h1>
 
-<p>Hover over the div element below:</p>
+    <p>Hover over the div element below:</p>
 
-<img src="img2.jpg"/>
+    <img src="img2.jpg" />
 
-<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
-
-
-</body>
+    <p>
+      <b>Note:</b> This example does not work in Internet Explorer 9 and earlier
+      versions.
+    </p>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-
+<!-- COMPLETED -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,19 +9,23 @@ p {
 } 
 #para1 {
   text-align: left;
-  color: blue;
+  color: rgb(238, 35, 184);
 }
 .center {
   text-align:right;
   color: green;
 }
 h1.sel {
-  text-align:center;
+  text-align:right;
   color: pink;
 }
-h2, h3, h4 {
+p.sel {
   text-align:right;
-  color: yellow;
+  color: rgb(7, 207, 117);
+}
+h2, h3, h4 {
+  text-align:left;
+  color: rgb(8, 74, 242);
 }
 *{
   text-align:center;
@@ -34,13 +38,24 @@ h2, h3, h4 {
 
 
 <p>element Selector for a paragraph</p>
+<h2>Grouping Selector for h2</h2>
 <p id="para1">id Selector for a paragraph</p>
 <p class="center">class Selector for a paragraph</p>
+<h3>Grouping Selector for h3</h3>
+<p class="sel">class Selector not affected for this paragraph since it is created only for the h1 tag</p>
+<h1 class="sel">specific class selector applied for h1<h1>
+<h1>specific class selector not applied for h1<h1></h1>
+<h2>Grouping Selector for h2</h2>
+<h3>Grouping Selector for h3</h3>
+<h4>Grouping Selector for h4</h4>
+<h6>Universal Selector</h6>
+<pre class="sel">Can be applied for poems</pre>
+<!-- <p class="center">class Selector for a paragraph</p>
 <p class="sel">class Selector not affected for this paragraph since it is created only for the h1 tag</p>
 <h1 class="sel">specific class selector applied for h1<h1>
 <h2>Grouping Selector for h2</h2>
 <h3>Grouping Selector for h3</h3>
 <h4>Grouping Selector for h4</h4>
-<h5>Universal Selector applied</h5>
+<h5>Universal Selector applied</h5> -->
 </body>
 </html>
